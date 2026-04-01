@@ -18,7 +18,10 @@
     "dev": "bun run ./src/bootstrap-entry.ts",
     "start": "bun run ./src/bootstrap-entry.ts",
     "version": "bun run ./src/bootstrap-entry.ts --version",
-    "dev:restore-check": "bun run ./src/dev-entry.ts"
+    "dev:restore-check": "bun run ./src/dev-entry.ts",
+    "smoke-check": "node ./scripts/smoke-check.mjs",
+    "smoke-check:ci": "node ./scripts/smoke-check.mjs --require-bun",
+    "smoke-check:static": "node ./scripts/smoke-check.mjs --static-only"
   },
   "dependencies": {
     "@alcalzone/ansi-tokenize": "*",
